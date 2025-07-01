@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Iversen’s Bakery Freezer Inventory</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+</head>
+<body>
+  <header>
+    <h1 class="fancy-title">🧁 Iversen’s Bakery Freezer Inventory</h1>
+  </header>
+
+  <section>
+    <form id="add-form">
+      <h3>Add Item</h3>
+      <input type="text" id="item" placeholder="e.g. vanilla donuts" required />
+      <input type="number" id="quantity" placeholder="Quantity" min="1" required />
+      <button type="submit">Add</button>
+    </form>
+
+    <form id="update-form">
+      <h3>Update Item Quantity</h3>
+      <input type="text" id="update-item" placeholder="e.g. vanilla donuts" required />
+      <input type="number" id="update-quantity" placeholder="New quantity" min="0" required />
+      <button type="submit">Update</button>
+    </form>
+
+    <h2>📋 Inventory</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Quantity</th>
+          <th>Last Updated</th>
+        </tr>
+      </thead>
+      <tbody id="inventory-list"></tbody>
+    </table>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Iversen’s Bakery</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
