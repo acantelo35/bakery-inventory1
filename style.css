@@ -1,0 +1,85 @@
+body {
+  background: #005f73; /* Blue background */
+  color: #c0c0c0; /* Silver text */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 900px;
+  margin: auto;
+  padding: 2em;
+  overflow-y: auto;
+}
+
+header, footer {
+  text-align: center;
+  font-size: 1.5em;
+  padding: 1em;
+  background: #0a9396;
+  color: #f0f0f0;
+}
+
+.fancy-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 2.5em;
+  letter-spacing: 2px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+section {
+  padding: 1em 0;
+}
+
+form {
+  margin-bottom: 2em;
+  background: #94d2bd;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+input, button {
+  padding: 0.5em;
+  margin: 0.25em;
+  border: 2px solid #0a9396;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+  font-size: 1em;
+}
+
+input:focus, button:focus {
+  outline: none;
+  border-color: #c0c0c0;
+}
+
+button {
+  cursor: pointer;
+  background-color: #0a9396;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #005f73;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
+}
+
+th, td {
+  padding: 0.5em;
+  border-bottom: 1px solid #c0c0c0;
+  text-align: left;
+}
+
+th {
+  background-color: #0a9396;
+  color: #fff;
+}
+
+tr:hover {
+  background-color: #c0c0c0;
+  color: #333;
+}
